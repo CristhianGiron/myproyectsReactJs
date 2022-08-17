@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="copyright" content="MACode ID, https://macodeid.com">
+
+  <title>donations</title>
+
+  <link rel="stylesheet" href="../assets/vendor/animate/animate.css">
+
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="../assets/css/maicons.css">
+
+  <link rel="stylesheet" href="../assets/vendor/owl-carousel/css/owl.carousel.css">
+
+  <link rel="stylesheet" href="../assets/css/theme.css">
+  
+  <script src="https://www.paypal.com/sdk/js?client-id=AeHyfErwfCwKb-eO6iPNx-HF7k7GebRAyRwC9A_xJ2-mohkLedGnYneweKER4YbMxKFPFvALLrHxgHFp"></script>
+
+
+  <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon"><link rel="icon" href="../assets/img/favicon.png" sizes="32x32">
+
+</head>
+
+<body>
+
+  <!-- Back to top button -->
+  <div class="back-to-top"></div>
+
+  <header id="header-content">
+
+    <div class="container mt-5">
+      <div class="page-banner">
+        <div class="row justify-content-center align-items-center h-100">
+          <div class="col-md-6">
+            <nav aria-label="Breadcrumb">
+              <ul class="breadcrumb justify-content-center py-0 bg-transparent">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active">Donate</li>
+              </ul>
+            </nav>
+            <h1 class="text-center">Make a donation</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 py-03 wow fadeInUp">
+            <div class="img-place mb-3 img-port">
+              <img src="../assets/img/port.png" alt="">
+            </div>
+            <h2 class="title-section">
+              Help us secure the future</h2>
+            <div class="divider"></div>
+            <p class="parrafo">
+              The Earth, in the midst of the climate crisis, has been reclaiming its space.
+              Stop the indiscriminate felling of forests, the high levels of contamination
+              atmosphere, reduce the emission of greenhouse gases and stop the
+              illegal trade in wild flora and fauna species are some of the
+              actions to be implemented to avoid further negative consequences
+              about the environment.
+            </p>
+          </div>
+
+          <div class="col-lg-6 py-3 wow fadeInUp">
+            <h2 class="title-section">Donate</h2>
+            <div class="divider"></div>
+            <div class="list-group list-group-checkable d-grid gap-2 border-0 w-auto">
+
+              <input class="list-group-item-check pe-none" type="radio" name="listGroupCheckableRadios"
+                id="inlineRadio1" value="option1" checked>
+              <label class="list-group-item rounded-3 py-3" for="inlineRadio1">
+                10$
+                <span class="d-block small opacity-50"></span>
+              </label>
+
+              <input class="list-group-item-check pe-none" type="radio" name="listGroupCheckableRadios"
+                id="inlineRadio2" value="option2">
+              <label class="list-group-item rounded-3 py-3" for="inlineRadio2">
+                25$
+                <span class="d-block small opacity-50"></span>
+              </label>
+
+              <input class="list-group-item-check pe-none" type="radio" name="listGroupCheckableRadios"
+                id="inlineRadio3" value="option3">
+              <label class="list-group-item rounded-3 py-3" for="inlineRadio3">
+                50$
+                <span class="d-block small opacity-50"></span>
+              </label>
+
+              <input class="list-group-item-check pe-none" type="radio" name="listGroupCheckableRadios"
+                id="inlineRadio4" value="option4">
+              <label class="list-group-item rounded-3 py-3" for="inlineRadio4">
+                75$
+                <span class="d-block small opacity-50"></span>
+              </label>
+              <input type="number" placeholder="Other" class="form-control pe-one" id="otro" name="otro"
+                value="option5">
+                <div class="linea"></div>
+              <!-- partial:index.partial.html -->
+              <section>
+                <fieldset class="captchaField d-grid w-auto">
+                  <span style="visibility: hidden;" id="SuccessMessage" class="success">Thanks! , you can now submit the form!</span>
+                  
+                  <div style="visibility: visible;" id="capcha">
+
+                    <input type="text" id="UserCaptchaCode" class="form-control pe-one"
+                    placeholder='Enter Captcha - Case Sensitive'>
+                  <span id="WrongCaptchaError" class="error"></span>
+                  <div class='CaptchaWrap'>
+                    <div id="CaptchaImageCode" class="CaptchaTxtField w-75">
+                      <canvas id="CapCode" class="capcode" width="300" height="80"></canvas>
+                    </div>
+                    <input type="button" class="ReloadBtn" onclick='CreateCaptcha();'>
+                  </div>
+                  <a class="btn btn-primary w-75 btnSubmit" type="button" onclick="CheckCaptcha(); Submit();"
+                    value="Submit">Submit</a>
+
+                  </div>
+                 
+
+
+                </fieldset>
+              </section>
+              <div id="content">
+                <div  style="visibility: hidden;" class="linea" id="lineavisible"></div>
+                <div id="paypal-button-container"></div>    
+              </div>
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Page section-->
+  </main>
+  <div id="footer-content"></div>
+
+  <script src="../assets/js/jquery-3.6.0.min.js"></script>
+
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+  <script src="../assets/vendor/wow/wow.min.js"></script>
+
+  <script src="../assets/vendor/owl-carousel/js/owl.carousel.min.js"></script>
+
+  <script src="../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+
+  <script src="../assets/vendor/animateNumber/jquery.animateNumber.min.js"></script>
+
+  <script src="../assets/js/google-maps.js"></script>
+
+  <script src="../assets/js/theme.js"></script>
+
+  <script src="../assets/js/create-elements.js"></script>
+
+  <script async src="https://www.google.com/recaptcha/api.js"></script>
+
+  <script src="../assets/js/paypal.js"></script>
+
+
+  <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap"></script> -->
+
+
+</body>
+
+</html>
